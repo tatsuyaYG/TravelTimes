@@ -165,9 +165,26 @@
 	"styles": {
 		"blocks": {
 			"core/image": {
-						"border": {
-							"radius": "5px"
+				"border": {
+					"radius": "5px"
+				}
+			},
+			"core/post-content": {
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var:preset|color|secondary"
 						}
+					}
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|josefin-sans",
+					"fontSize": "var:preset|font-size|large",
+					"fontStyle": "normal",
+					"fontWeight": "300"
+				}
 			}
 		},
 		"color": {
@@ -220,7 +237,7 @@
 					}
 				},
 				"color": {
-					"text": "var:preset|color|secondary"
+					"text": "var:preset|color|contrast"
 				},
 				"typography": {
 					"textDecoration": "none"

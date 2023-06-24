@@ -1,9 +1,9 @@
 /*
 Theme Name: TravelTimes
-Theme URI: 
-Author: 
-Author URI: 
-Description: 
+Theme URI:
+Author:
+Author URI:
+Description:
 Requires at least: 6.0
 Tested up to: 6.2.2
 Requires PHP: 5.7
@@ -11,6 +11,19 @@ Version: 0.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: traveltimes
-Tags: 
+Tags:
 */
+
+/* 見出し：丸付き飾り罫 */
+:is(h1, h2, h3, h4, h5, h6).is-style-decoration-line {
+  padding-bottom: 0.5em;
+  border: solid 12px transparent;
+  border-image: url(assets/images/line.svg) 12;
+}
+
+/* カテゴリー一覧：リストマークなし */
+.wp-block-categories.is-style-no-listmark{
+  list-style: none;
+  padding-left: 0;
+}
 
