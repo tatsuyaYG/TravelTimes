@@ -178,6 +178,53 @@
 					}
 				}
 			},
+			"core/post-featured-image": {
+				"elements": {
+					"link": {
+						":hover": {
+							"shadow": "0 3px 6px rgba(0,0,0,0.4)"
+						}
+					}
+				}
+			},
+			"core/post-terms": {
+				"elements": {
+					"link": {
+						":hover": {
+							"color": {
+								"background": "var:preset|color|primary"
+							},
+							"typography": {
+								"textDecoration": "none"
+							}
+						},
+						"border": {
+							"color": "var:preset|color|tertiary",
+							"radius": "10px",
+							"style": "solid",
+							"width": "2px"
+						},
+						"spacing": {
+							"padding": {
+								"bottom": "var:preset|spacing|30",
+								"left": "var:preset|spacing|40",
+								"right": "var:preset|spacing|40",
+								"top": "var:preset|spacing|30"
+							}
+						},
+						"typography": {
+							"fontSize": "var:preset|font-size|small",
+							"fontStyle": "normal",
+							"fontWeight": "700"
+						}
+					}
+				}
+			},
+			"core/query-pagination-numbers": {
+				"color": {
+					"text": "var:preset|color|gray"
+				}
+			},
 			"core/site-title": {
 				"typography": {
 					"fontFamily": "var:preset|font-family|josefin-sans",
@@ -269,6 +316,10 @@
 		{
 			"area": "footer",
 			"name": "footer"
+		},
+		{
+			"area": "uncategorized",
+			"name": "posts"
 		}
 	],
 	"version": 2,

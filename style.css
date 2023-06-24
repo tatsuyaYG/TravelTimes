@@ -27,3 +27,27 @@ Tags:
   padding-left: 0;
 }
 
+/* 投稿日：時計アイコン */
+.wp-block-post-date.is-style-clock-icon::before{
+  content: url(assets/images/clock-regular.svg);
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  margin-right: 0.4em;
+  font-size: 1.25em;
+  opacity: 0.3;
+}
+
+/* 次の投稿：ラベル逆配置 */
+.wp-block-post-navigation-link.is-style-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3em;
+}
+
+/* テンプレートパーツ：上マージン削除 */
+.wp-block-template-part.is-style-re-margin-top {
+  margin-top: 0;
+}
+

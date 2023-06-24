@@ -45,5 +45,32 @@ function mytheme_register_block_styles(){
 			'label' => 'リストマークなし'
 		)
 	);
+
+	//投稿日：時計アイコン
+	register_block_style(
+		'core/post-date',
+		array(
+			'name' => 'clock-icon',
+			'label' => '時計アイコン'
+		)
+	);
+
+	//次の投稿：ラベル逆配置
+	register_block_style(
+		'core/post-navigation-link',
+		array(
+			'name' => 'reverse',
+			'label' => 'ラベル逆配置'
+		)
+	);
+
+	//テンプレートパーツ：上マージン削除
+	register_block_style(
+		'core/template-part',
+		array(
+			'name' => 're-margin-top',
+			'label' => '上マージン削除'
+		)
+	);
 }
 add_action( 'init', 'mytheme_register_block_styles' );
