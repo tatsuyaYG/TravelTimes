@@ -320,6 +320,10 @@
 		{
 			"area": "uncategorized",
 			"name": "posts"
+		},
+		{
+			"area": "uncategorized",
+			"name": "search"
 		}
 	],
 	"version": 2,
