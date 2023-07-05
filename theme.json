@@ -1,4 +1,13 @@
 {
+	"customTemplates": [
+		{
+			"name": "wp-custom-template-no-title",
+			"postTypes": [
+				"page"
+			],
+			"title": "no-title"
+		}
+	],
 	"settings": {
 		"appearanceTools": true,
 		"color": {

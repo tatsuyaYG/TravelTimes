@@ -51,3 +51,47 @@ Tags:
   margin-top: 0;
 }
 
+/* 段落：スクロールダウン */
+p.is-style-scroll-down{
+  position: relative;
+  height: 144px;
+  border-right: solid 1px var(--wp--preset--color--dark--gray);
+  writing-mode: vertical-rl;
+}
+
+p.is-style-scroll-down::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -7px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px var(--wp--preset--color--dark--gray);
+  border-radius: 50%;
+  background-color: var(--wp--preset--color--primary);
+  animation: scroll 4s infinite;
+}
+@keyframes scroll{
+  0%{
+    top: 0%;
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+/* カラム：モバイル逆順 */
+@media (max-width: 781px){
+  .wp-block-columns.is-style-reverse{
+    flex-direction: column-reverse;
+  }
+}
+

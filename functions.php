@@ -72,5 +72,23 @@ function mytheme_register_block_styles(){
 			'label' => '上マージン削除'
 		)
 	);
+
+	//段落：スクロールダウン
+	register_block_style(
+		'core/paragraph',
+		array(
+			'name' => 'scroll-down',
+			'label' => 'スクロールダウン'
+		)
+	);
+
+	//カラム：モバイル逆順
+	register_block_style(
+		'core/columns',
+		array(
+			'name' => 'reverse',
+			'label' => 'モバイル逆順'
+		)
+	);
 }
 add_action( 'init', 'mytheme_register_block_styles' );
